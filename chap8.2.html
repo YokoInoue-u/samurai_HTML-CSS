@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chap8headerid="header"での実装</title>
+    <style>
+        #header {
+            background-color: red;
+            position: fixed;
+        }
+        .size {
+            position: relative;
+            top: 2000px;
+        }
+        #footer {
+            background-color: blue;
+            position: fixed;
+            bottom:0;
+        }
+        .sort {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        HEADER
+    </div>
+    <div class="sort">
+        Nav1
+    </div>
+    <div class="sort">
+        Nav2
+    </div>
+    <div class="sort">
+        Nav3
+    </div>
+    <h1 class="size">BODY</h1>
+    <p class="size">body</p>
+    <div id="footer">
+        FOOTER
+    </div>
+</body>
+</html>

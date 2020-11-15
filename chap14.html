@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chp14フレックスボックス</title>
+    <style>
+            #sort {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            div {
+              margin-right: 100px;
+            }
+            #no-wrap {
+                display: flex;
+                flex-wrap:nowrap;
+            }
+
+            #wrap {
+                display: flex;
+                flex-wrap:wrap;
+            }
+
+            #reverse {
+                display: flex;
+                flex-wrap:wrap-reverse;
+            }
+            #flex-flow {
+                display: flex;
+                flex-flow: row-reverse wrap;
+            }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <p>float left よりも簡単に横並び出来る</p>
+    <p>レスポンシブなデザインに使いやすい</p>
+    <p>1_diectin:配置</br>2_wrap: 折り返し</br>3_flow: でぃれくしょんとラップを一度に設定</p>
+
+    <h2>1_diectin:配置</h2>
+        <div id="sort">
+            <div>
+                Hoge
+            </div>
+            <div>
+                Fuga
+            </div>
+            <div>
+                Foo
+            </div>
+            <div>
+                Bar
+            </div>
+        </div>
+    <h2>2_wrap: 折り返し</h2>
+        <div id="no-wrap">
+            <h1>Hoge</h1>
+            <h1>Fuga</h1>
+            <h1>Foo</h1>
+            <h1>Bar</h1>
+            <h1>よく</h1>
+        </div>
+        <div id="wrap">
+            <h1>Hoge</h1>
+            <h1>Fuga</h1>
+            <h1>Foo</h1>
+            <h1>Bar</h1>
+            <h1>わか</h1>
+        </div>
+        <div id="reverse">
+            <h1>Hoge</h1>
+            <h1>Fuga</h1>
+            <h1>Foo</h1>
+            <h1>Bar</h1>
+            <h1>わん</h1>
+        </div>
+    <h2>3_flow: でぃれくしょんとラップを一度に設定</h2>
+    <p>row-reverseだから右から配置</p>    
+        <div id="flex-flow">
+            <h2>Hoge</h2>
+            <h2>Fuga</h2>
+            <h2>Foo</h2>
+            <h2>Bar</h2>
+        </div>
+</body>
+</html>
